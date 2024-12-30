@@ -39,7 +39,7 @@ public class TC02_ValidarNombre {
                 ExpectedConditions.elementToBeClickable(By.id("full-name")));
         fullNameField.clear();
         fullNameField.sendKeys("Pedro");
-        Thread.sleep(2000);
+        Thread.sleep(2000); 
 
         WebElement emailField = driver.findElement(By.id("email"));
         emailField.sendKeys("pedro.error" + System.currentTimeMillis() + "@gmail.com");
@@ -58,16 +58,18 @@ public class TC02_ValidarNombre {
         confirmPasswordField.sendKeys("Prueba1234!");
 
         WebElement signUpButton = driver.findElement(By.xpath("//button[@type='submit']"));
-        Thread.sleep(2000);
+        Thread.sleep(2000);  
 
-        assertFalse(signUpButton.isEnabled(),
+    
+        assertFalse(signUpButton.isEnabled(), 
                 "El botón 'Sign Up' debe permanecer deshabilitado cuando el campo de nombre tiene solo una palabra.");
 
         fullNameField.clear();
         fullNameField.sendKeys("Pedro Perez");
-        Thread.sleep(2000);
+        Thread.sleep(2000);  
 
-        assertTrue(signUpButton.isEnabled(),
+  
+        assertTrue(signUpButton.isEnabled(), 
                 "El botón 'Sign Up' debe habilitarse cuando el nombre tiene al menos dos palabras.");
 
         signUpButton.click();
