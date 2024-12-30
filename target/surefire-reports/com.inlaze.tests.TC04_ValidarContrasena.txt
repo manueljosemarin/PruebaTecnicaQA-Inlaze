@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.inlaze.tests.TC04_ValidarContrasena
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 46.224 s - in com.inlaze.tests.TC04_ValidarContrasena
