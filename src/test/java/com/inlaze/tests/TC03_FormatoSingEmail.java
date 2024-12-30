@@ -41,7 +41,7 @@ public class TC03_FormatoSingEmail {
         Thread.sleep(2000);
         
         WebElement emailField = driver.findElement(By.id("email"));
-        emailField.sendKeys("correo_invalido.com");
+        emailField.sendKeys("correoinvalido");
         Thread.sleep(2000);
         
         By passwordLocator = By.cssSelector("app-password#password input#password");

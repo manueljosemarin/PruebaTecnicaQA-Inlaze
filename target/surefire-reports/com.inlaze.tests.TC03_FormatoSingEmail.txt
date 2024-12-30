@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.inlaze.tests.TC03_FormatoSingEmail
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 63.93 s <<< FAILURE! - in com.inlaze.tests.TC03_FormatoSingEmail
-com.inlaze.tests.TC03_FormatoSingEmail.testCorreoDuplicado  Time elapsed: 43.004 s  <<< FAILURE!
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 62.997 s <<< FAILURE! - in com.inlaze.tests.TC03_FormatoSingEmail
+com.inlaze.tests.TC03_FormatoSingEmail.testCorreoDuplicado  Time elapsed: 41.878 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: No debería redirigir con email duplicado. ==> expected: <false> but was: <true>
 	at com.inlaze.tests.TC03_FormatoSingEmail.testCorreoDuplicado(TC03_FormatoSingEmail.java:148)
 
-com.inlaze.tests.TC03_FormatoSingEmail.testEmailInvalido  Time elapsed: 20.9 s  <<< FAILURE!
+com.inlaze.tests.TC03_FormatoSingEmail.testEmailInvalido  Time elapsed: 21.086 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: No debería redirigir con email inválido. ==> expected: <false> but was: <true>
 	at com.inlaze.tests.TC03_FormatoSingEmail.testEmailInvalido(TC03_FormatoSingEmail.java:71)
 

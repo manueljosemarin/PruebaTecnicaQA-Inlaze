@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inlaze.tests.TC03_FormatoSingEmail" time="63.93" tests="2" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.inlaze.tests.TC03_FormatoSingEmail" time="62.997" tests="2" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="webdriver.chrome.driver" value="/usr/local/bin/chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="419"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/target/surefire/surefirebooter12029128840576036340.jar /Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/target/surefire 2024-12-30T16-53-27_413-jvmRun1 surefire6353361967911798333tmp surefire_0890449874699376245tmp"/>
+    <property name="sun.java.command" value="/Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/target/surefire/surefirebooter13563187742072653815.jar /Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/target/surefire 2024-12-30T17-13-20_247-jvmRun1 surefire11345907947099883772tmp surefire_018156461700963362917tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="TC03_FormatoSingEmail"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/target/surefire/surefirebooter12029128840576036340.jar"/>
+    <property name="surefire.real.class.path" value="/Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/target/surefire/surefirebooter13563187742072653815.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="23.0.1"/>
@@ -61,53 +61,34 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testCorreoDuplicado" classname="com.inlaze.tests.TC03_FormatoSingEmail" time="43.004">
+  <testcase name="testCorreoDuplicado" classname="com.inlaze.tests.TC03_FormatoSingEmail" time="41.878">
     <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: No debería redirigir con email duplicado. ==> expected: <false> but was: <true>
 	at com.inlaze.tests.TC03_FormatoSingEmail.testCorreoDuplicado(TC03_FormatoSingEmail.java:148)
 ]]></failure>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 30859
+Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 29815
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 30859.
-dic 30, 2024 4:53:31 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ChromeDriver was started successfully on port 29815.
+dic 30, 2024 5:13:23 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 131
-dic 30, 2024 4:53:31 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+dic 30, 2024 5:13:23 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.9.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-dic 30, 2024 4:54:11 P.M. org.openqa.selenium.remote.http.WebSocket$Listener onError
-ADVERTENCIA: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
-	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-
 ]]></system-err>
   </testcase>
-  <testcase name="testEmailInvalido" classname="com.inlaze.tests.TC03_FormatoSingEmail" time="20.9">
+  <testcase name="testEmailInvalido" classname="com.inlaze.tests.TC03_FormatoSingEmail" time="21.086">
     <failure type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: No debería redirigir con email inválido. ==> expected: <false> but was: <true>
 	at com.inlaze.tests.TC03_FormatoSingEmail.testEmailInvalido(TC03_FormatoSingEmail.java:71)
 ]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 16146
+    <system-err><![CDATA[Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 11763
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 16146.
-dic 30, 2024 4:54:12 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ChromeDriver was started successfully on port 11763.
+dic 30, 2024 5:14:04 P.M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find CDP implementation matching 131
-dic 30, 2024 4:54:12 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+dic 30, 2024 5:14:04 P.M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.9.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
