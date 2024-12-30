@@ -46,7 +46,7 @@ public class TC01_RegistroValido {
 
         WebElement emailField = wait.until(
                 ExpectedConditions.elementToBeClickable(By.id("email")));
-        emailField.sendKeys("pedro.perez" + System.currentTimeMillis() + "@test.com");
+        emailField.sendKeys("pedro.perez" + System.currentTimeMillis() + "@gmail.com");
         Thread.sleep(5000);
 
         By passwordLocator = By.cssSelector("app-password#password input#password");
