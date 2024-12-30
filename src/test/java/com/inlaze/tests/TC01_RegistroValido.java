@@ -8,7 +8,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -53,8 +52,6 @@ public class TC01_RegistroValido {
         WebElement passwordField = wait.until(
                 ExpectedConditions.elementToBeClickable(passwordLocator));
         Thread.sleep(5000);
-
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", passwordField);
 
         passwordField.click();
 
