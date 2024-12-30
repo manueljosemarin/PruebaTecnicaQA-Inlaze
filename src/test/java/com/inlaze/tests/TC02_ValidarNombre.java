@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.junit.jupiter.api.AfterEach;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -30,15 +31,15 @@ public class TC02_ValidarNombre {
     }
 
     @Test
-    @DisplayName("Validar que el botón 'Sign Up' permanezca deshabilitado con una sola palabra en el campo nombre")
-    void testNombreUnaPalabra() throws InterruptedException {
+    @DisplayName("Validar que el botón 'Sign Up' se habilite al ingresar nombre completo")
+    void testNombreValidacion() throws InterruptedException {
         driver.get("https://test-qa.inlaze.com/auth/sign-up");
 
         WebElement fullNameField = wait.until(
                 ExpectedConditions.elementToBeClickable(By.id("full-name")));
         fullNameField.clear();
         fullNameField.sendKeys("Pedro");
-        Thread.sleep(3000); 
+        Thread.sleep(2000);
 
         WebElement emailField = driver.findElement(By.id("email"));
         emailField.sendKeys("pedro.error" + System.currentTimeMillis() + "@gmail.com");
@@ -46,7 +47,7 @@ public class TC02_ValidarNombre {
         By passwordLocator = By.cssSelector("app-password#password input#password");
         WebElement passwordField = wait.until(
                 ExpectedConditions.elementToBeClickable(passwordLocator));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         passwordField.click();
         passwordField.sendKeys("Prueba1234!");
@@ -57,10 +58,23 @@ public class TC02_ValidarNombre {
         confirmPasswordField.sendKeys("Prueba1234!");
 
         WebElement signUpButton = driver.findElement(By.xpath("//button[@type='submit']"));
-        Thread.sleep(2000); 
+        Thread.sleep(2000);
 
-        assertFalse(signUpButton.isEnabled(), 
+        assertFalse(signUpButton.isEnabled(),
                 "El botón 'Sign Up' debe permanecer deshabilitado cuando el campo de nombre tiene solo una palabra.");
+
+        fullNameField.clear();
+        fullNameField.sendKeys("Pedro Perez");
+        Thread.sleep(2000);
+
+        assertTrue(signUpButton.isEnabled(),
+                "El botón 'Sign Up' debe habilitarse cuando el nombre tiene al menos dos palabras.");
+
+        signUpButton.click();
+
+        boolean redirected = wait.until(ExpectedConditions.urlContains("sign-in"));
+        assertTrue(redirected,
+                "El registro debe redirigir a la página de inicio de sesión después de ingresar un nombre válido.");
     }
 
     @AfterEach
