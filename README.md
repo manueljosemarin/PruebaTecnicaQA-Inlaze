@@ -9,7 +9,7 @@ La documentación de los casos de prueba, objetivos y datos de prueba, además d
 - **ChromeDriver**  
 - **Git**  
 ## Instalación y configuración  
-git clone https://github.com/usuario/PruebaTecnicaQA-Inlaze.git  
+git clone https://github.com/manueljosemarin/PruebaTecnicaQA-Inlaze
 cd PruebaTecnicaQA-Inlaze  
 mvn clean install  
 ## Ejecución de los scripts  
