@@ -4,4 +4,5 @@
 /Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/src/test/java/com/inlaze/tests/TC02_ValidarNombre.java
 /Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/src/test/java/com/inlaze/tests/TC05_CamposObligatorios.java
 /Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/src/test/java/com/inlaze/tests/TC06_ContrasenasIguales.java
+/Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/src/test/java/com/inlaze/tests/TC08_ValidacionLoginIncomple.java
 /Users/manolo/Desktop/PruebaTecnicaQA---Inlaze/src/test/java/com/inlaze/tests/TC01_RegistroValido.java
