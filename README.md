@@ -1,5 +1,7 @@
 # PruebaTecnicaQA-Inlaze  
 Automatización de casos de prueba para la plataforma Inlaze (Registro y Login).  
+## Reportes y Errores  
+La documentación de los casos de prueba, objetivos y datos de prueba, además de los reportes de bugs encontradoss están disponibles en Notion, junto con capturas de pantalla, los procedimientos de reproducción paso a paso junto con los resultados esperados y encontrados.  
 ## Requisitos previos  
 - **Java 11 o superior**  
 - **Apache Maven**  
@@ -32,6 +34,5 @@ src/
                      ├── TC08_ValidacionLoginIncomple.java  
                      ├── TC09_VerificarNombreUsuario.java  
                      └── TC10_VerificarLogout.java  
-## Reportes y Errores  
-La documentación de los casos de prueba, objetivos y datos de prueba, además de los reportes de bugs encontradoss están disponibles en Notion, junto con capturas de pantalla, los procedimientos de reproducción paso a paso junto con los resultados esperados y encontrados.  
+
 
