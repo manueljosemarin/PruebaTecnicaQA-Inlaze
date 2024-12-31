@@ -13,7 +13,7 @@ mvn clean install
 ## Ejecución de los scripts  
 mvn test  
 Para ejecutar un caso específico: 
-# Ejemplo:
+### Ejemplo:
 mvn -Dtest=TC01_RegistroValido test  
 ## Estructura del Proyecto  
 src/  
